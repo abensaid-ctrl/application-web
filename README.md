@@ -23,5 +23,7 @@ vercel --prod
 
 ### Notes
 
-- Le fichier `vercel.json` redirige la racine `/` vers `3.html`.
-- Tu peux donc garder les noms de fichiers actuels.
+- `index.html` est maintenant le point d'entree principal pour Vercel.
+- `3.html` est conserve pour compatibilite.
+- En production, l'application fonctionne automatiquement en mode demo sans backend local.
+- Si tu veux brancher un backend distant, ajoute `?api=https://ton-api/api` a l'URL.
